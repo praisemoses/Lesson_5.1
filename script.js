@@ -1,13 +1,21 @@
 // Scenario:
 // You're building an application for a music shop. They want a feature that 
 // recommends an song based on their current mood.
-
 // 1. Create a variable named mood.
 //  - Assign it a string value of "happy".
-
+let mood = "happy"
 
 // 2. Create a variable named recommendedSong. Do not assign a value.
-
+let recommendedSong
+if (mood==="happy") {
+    recommendedSong.innerHTML = "Here Comes the Sun by The Beatles";
+} else if (mood==="sad") {
+    recommendedSong.innerHTML = "Someone Like You by Adele"    
+} else if (mood==="") {
+    recommendedSong.innerHTML = "Break My Soul by Beyonce"
+} else {
+}
+console.log(recommendedSong)
 
 // 3. Implement the recommendation logic.
 // - If the mood is equal to "happy", recommend "Here Comes the Sun by The Beatles".
